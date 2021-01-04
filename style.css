@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+#Home {
+    background-image: url(resources/home_banner.jpg);
+    position: relative;
+    height: 624px;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    margin-top: 0;
+}
+
+
+.navigation {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+    margin: 0;
+    padding-right: 50px;
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 37px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.651);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: gainsboro;
+}
+
+.home-elements {
+    color: rgb(160, 160, 160);
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    font-size: 48px;
+}
+
+.highlight {
+    font-weight: 300;
+    color: rgb(223, 159, 159)
+}
