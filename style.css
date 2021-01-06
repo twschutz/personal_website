@@ -67,7 +67,39 @@ body {
     width: 25%;
     padding: 0px;
     text-align: center;
+    animation: scale 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@keyframes slide-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-left {
+      0% {
+          opacity: 0;
+          transform: translateX(300px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  @keyframes scale{
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .skill-img {
     width: 50%;
@@ -77,12 +109,14 @@ body {
     text-align: center;
     font-size: 48px;
     margin-bottom: 0;
+    animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .black {
     border-bottom: 3px solid black;
     width: 10%;
     background-color: black;
+    animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 hr {
@@ -129,4 +163,95 @@ footer {
 .section {
     margin: 0;
     padding: 0;
+}
+
+.two-part {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    margin-top: 75px;
+    text-align: center;
+}
+#left-part {
+    animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#right-part {
+    animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.about-skills {
+    margin-top: 75px;
+}
+
+.skill-container {
+    background-color: gainsboro;
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.skill-box {
+    text-align: right;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.two-part {
+    margin-bottom: 30px;
+}
+
+.c, .git{
+    width: 80%;
+    background-color: #01519c;
+}
+
+.html, .css {
+    width: 65%;
+    background-color: #01519c;
+}
+
+.python {
+    width: 50%;
+    background-color: #01519c;
+}
+
+.office, .org {
+    width: 90%;
+    background-color: #01519c;
+}
+
+.com {
+    width: 98%;
+    background-color: #01519c;
+}
+
+.skill-label p {
+    text-align: left;
+}
+
+.skill-box-text {
+    padding-top: 10px;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    width: 15%;
+    font-size: 12px;
+}
+
+.me-img {
+    width: 30%;
+    border: 1px solid black;
+}
+
+.about-text {
+    margin: 0 30%;
+    padding-top: 25px;
+}
+
+.me-title {
+    font-size: 36px;
 }
