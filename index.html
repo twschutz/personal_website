@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+        <script src="resources/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.min.js"></script>
     </head>
     <body>
         <div id="Home">
@@ -228,11 +229,11 @@
             <h1 class="heading">Contact Me</h1><hr class="black">
             <p class="contact-info">Need to contact me?</p>
             <div class="input-container">
-                <form class="contact-form">
+                <form class="contact-form" action="mailto:tedschutz3@gmail.com" method="post" enctype="text/plain">
                     <input type="text" placeholder="Name" name="name" id="name" required>
                     <input type="email" placeholder="Email" name="email" id="email" required>
                     <textarea type="text" placeholder="Message" name="message" id="message" required></textarea>
-                    <input class="learn-btn" id="submit" value="Submit">
+                    <input class="learn-btn" type="submit" id="submit" value="Submit">
                 </form>
             </div>
         </div>
