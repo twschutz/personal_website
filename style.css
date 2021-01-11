@@ -34,17 +34,17 @@ body {
 
 .navigation a {
     text-decoration: none;
-    color: gainsboro;
+    color: ghostwhite;
     text-transform: uppercase;
     font-size: 16px;
 }
 
 .navigation a:hover {
-    color: rgb(224, 144, 144);
+    color: #2FE6DE;
 }
 
 .home-elements {
-    color: gainsboro;
+    color: ghostwhite;
     opacity: 1;
     position: absolute;
     width: 100%;
@@ -59,7 +59,7 @@ body {
 
 .highlight {
     font-weight: 300;
-    color: rgb(224, 144, 144)
+    color: #2FE6DE;
 }
 
 .column {
@@ -101,6 +101,15 @@ body {
     }
   }
 
+  @keyframes change-opacity{
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
 .skill-img {
     width: 50%;
 }
@@ -120,8 +129,8 @@ body {
 }
 
 hr {
-    border-bottom: 3px solid rgba(3, 218, 218, 0.5);
-    background-color: rgba(3, 218, 218, 0.5);
+    border-bottom: 3px solid #909cc2;
+    background-color: #909cc2;
     padding-top: 0;
     margin-top: 0;
 }
@@ -139,14 +148,14 @@ a {
     display: inline-block;
 }
 
-#Projects {
-    background-color: gainsboro;
+#Project {
+    background-color: rgb(183, 183, 214);
     width: 100%;
     text-align: center;
 }
 
 #Contact {
-    background-color: #01519c;
+    background-color: white;
     width: 100%;
     text-align: center;
 }
@@ -154,6 +163,8 @@ a {
 footer {
     background-color: #00274C;
     text-align: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 .footer-text {
@@ -185,7 +196,7 @@ footer {
 }
 
 .skill-container {
-    background-color: gainsboro;
+    background-color: ghostwhite;
     text-align: left;
     width: 80%;
     display: inline-block;
@@ -206,27 +217,27 @@ footer {
 
 .c, .git{
     width: 80%;
-    background-color: #01519c;
+    background-color: #4B4E6D;
 }
 
 .html, .css {
     width: 65%;
-    background-color: #01519c;
+    background-color: #4B4E6D;
 }
 
 .python {
     width: 50%;
-    background-color: #01519c;
+    background-color: #4B4E6D;
 }
 
 .office, .org {
     width: 90%;
-    background-color: #01519c;
+    background-color: #4B4E6D;
 }
 
 .com {
     width: 98%;
-    background-color: #01519c;
+    background-color: #4B4E6D;
 }
 
 .skill-label p {
@@ -254,4 +265,287 @@ footer {
 
 .me-title {
     font-size: 36px;
+}
+
+.project-row {
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.project-column {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    width: 25%;
+    height: 250px;
+}
+
+.project-column:hover .overlay{
+    bottom: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0.5;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: 1s ease;
+}
+
+.proj-img {
+      height: 100%;
+      width: 100%;
+      display: block;
+}
+
+.overlay-text {
+    color: ghostwhite;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.learn-btn {
+    background-color: ghostwhite;
+    border: 2px solid #4B4E6D;
+    color: #4B4E6D;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.project-column img {
+      background-color: ghostwhite;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    border: 0;
+    width: 50%;
+    left: 25%;
+    height: auto;
+    overflow: auto;
+}
+
+.close {
+    color: black;
+    float: right;
+    height: 100%;
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slideshow-container {
+    height: auto;
+    position: relative;
+    margin: auto;
+ }
+  
+.mySlides {
+    display: none;
+    margin-top: 10px;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    float: left;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(187, 185, 185, 0.8);
+}
+  
+.numbertext {
+    color: lightgray;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dotEA, .dotPW {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.slideshow-title {
+    text-align: left;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+.slideshow-img {
+    height: 100%;
+}
+
+.thin {
+    border: none;
+    height: 1px;
+    background-color: rgb(58, 58, 58);
+    margin: 0px 15px;
+}
+
+.slideshow-mini {
+    color:rgba(187, 185, 185, 0.8);
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.button-container {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-header {
+    background-color: #008CBA;
+}
+
+.project-container {
+    padding-bottom: 50px;
+}
+
+.contact-info {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: rgb(216, 216, 218);
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    padding-bottom: 40px;
+    margin-bottom: 5px;
+    background-color: rgb(216, 216, 218);
+    border: none;
+}
+
+#email, #name {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.input-container {
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+#submit {
+    padding: 5px 15px;
+    float: right;
+}
+
+.learn-btn:hover {
+    background-color: rgb(245, 245, 255);
+}
+
+input:focus {
+    background-color: rgb(241, 241, 241);
+    outline: none;
+}
+
+textarea:focus {
+    background-color: rgb(241, 241, 241);
+    outline: none;
+}
+
+.icon-container {
+    margin: 20px 33%;
+    width: 33%;
+
+}
+
+.logo {
+    margin: 10px 33%;
+    width: 50px;
+    height: auto;
+}
+
+.icon-container a {
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+}
+
+.modal p {
+    text-align: left;
+    margin-left: 5px;
 }
