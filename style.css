@@ -6,6 +6,8 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-items: center;
 }
 
 #Home {
@@ -148,6 +150,11 @@ a {
     display: inline-block;
 }
 
+.section-honors {
+    display: inline-block;
+
+}
+
 #Project {
     background-color: rgb(183, 183, 214);
     width: 100%;
@@ -182,12 +189,15 @@ footer {
     padding: 0px;
     margin-top: 75px;
     text-align: center;
+    align-items: center;
 }
 #left-part {
+    align-items: center;
     animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #right-part {
+    align-items: center;
     animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -263,6 +273,9 @@ footer {
     padding-top: 25px;
 }
 
+.about-text-honors {
+    margin: 0 5%;
+}
 .me-title {
     font-size: 36px;
 }
@@ -548,4 +561,81 @@ textarea:focus {
 .modal p {
     text-align: left;
     margin-left: 5px;
+}
+
+#banner { 
+    position: relative;
+    top: 0; 
+    left: 0; 
+    background-color: #ffd665; 
+    width: 100%; 
+  }
+
+#banner-content { 
+    text-align: center;
+    width: 100%; 
+    margin: 0 0; 
+    padding: 10px; 
+  }
+
+#honors-para {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: center;
+    float: left;
+    margin-left: 10px;
+    margin-top: 0;
+
+}
+
+#mlogo {
+    width: 4%;
+    height: 4%;
+    display: inline-block;
+    vertical-align: center;
+    float: left;
+}
+
+#banner-honors {
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+#self-photo {
+    width: 90%;
+    height: auto;
+}
+
+#About-honors {
+    margin-top: 50px;
+}
+
+#banner-btn {
+    background-color: white;
+    text-decoration: none;
+    padding: 3px 3px;
+    border: black;
+    border-radius: 1px;
+}
+
+#honors-photo {
+    height: 100px;
+    width:auto;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.honors-heading {
+text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#pdf {
+    height: 400px;
+    width: auto;
+    padding: 0 20px;
+    margin: 0 0;
 }
