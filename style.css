@@ -597,7 +597,7 @@ textarea:focus {
 }
 
 #banner-honors {
-    background-color: white;
+    background-color: rgb(52, 90, 196);
     position: fixed;
     z-index: 1000;
 }
@@ -617,6 +617,15 @@ textarea:focus {
     padding: 3px 3px;
     border: black;
     border-radius: 1px;
+}
+
+#banner-btn-honors {
+    background-color: white;
+    text-decoration: none;
+    padding: 7px 7px;
+    border: black;
+    border-radius: 1px;
+    float: right;
 }
 
 #honors-photo {
