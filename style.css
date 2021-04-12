@@ -275,6 +275,7 @@ footer {
 
 .about-text-honors {
     margin: 0 5%;
+    color: black;
 }
 .me-title {
     font-size: 36px;
@@ -576,6 +577,7 @@ textarea:focus {
     width: 100%; 
     margin: 0 0; 
     padding: 10px; 
+    color: white;
   }
 
 #honors-para {
